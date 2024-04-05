@@ -1,0 +1,24 @@
+#1 express gen 
+express appname --view=ejs
+cd appname
+npm i
+
+
+#2
+setup express session 
+    npm i express-session 
+    app.use + resave etc
+flash in app.use func 
+
+    -app,use(flash()) //flash allow to use data of other routes
+
+#3 mongoose setup 
+ - users.js
+ - see code for reference
+
+#4 authorization and authentication 
+ - passport + pasport local(strategy of code) + passport local mongoose(encryption)
+  npm i passport passport-local passport-local-mongoose mongoose express-session
+ - app.js code after view engine and before logger
+ - setup user.js
+ - in index.js try register first then others
